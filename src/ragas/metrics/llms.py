@@ -28,7 +28,7 @@ def generate(
     n_swapped = False
     llm.temperature = temperature
     if n is not None:
-        if isinstance(llm, OpenAI) or isinstance(llm, ChatOpenAI):
+        if isinstance(llm, OpenAI) or isinstance(llm, ChatOpenAI) or isinstance(llm, Cohere):
             old_n = llm.n
             llm.n = n
             n_swapped = True
