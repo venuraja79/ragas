@@ -49,7 +49,8 @@ class AnswerRelevancy(MetricWithLLM):
     name: str = "answer_relevancy"
     evaluation_mode: EvaluationMode = EvaluationMode.qa
     batch_size: int = 15
-    strictness: int = 3
+    # Temporary fix
+    strictness: int = 0
 
     def __post_init__(self: t.Self):
         self.temperature = 0.2 if self.strictness > 0 else 0
