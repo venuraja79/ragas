@@ -4,7 +4,7 @@ import typing as t
 
 from langchain.chat_models import ChatOpenAI
 from langchain.chat_models.base import BaseChatModel
-from langchain.llms import OpenAI
+from langchain.llms import OpenAI, Cohere
 from langchain.llms.base import BaseLLM
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema import LLMResult
